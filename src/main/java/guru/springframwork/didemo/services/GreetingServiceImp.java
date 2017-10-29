@@ -1,0 +1,13 @@
+package guru.springframwork.didemo.services;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class GreetingServiceImp implements GreetingService {
+    public static final String HELLO_GURUS = "Hello gurus!!! - Original";
+    @Override
+    public String sayGreeting() {
+        return HELLO_GURUS;
+
+    }
+}
